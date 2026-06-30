@@ -3,38 +3,22 @@ Quantum computing course
 
 Project QUBO-QAOA: Bipartite Matching 4x4 (PCI Vietnam Dataset)
 
-Dataset
-Dataset Name: Provincial Competitiveness Index (PCI) Vietnam 2024-2025
-.
-Official Source: PCI Vietnam
-.
-Responsible Institution: Vietnam Chamber of Commerce and Industry (VCCI) and USAID
-.
-Source URL: https://pcivietnam.vn/report-2025#sub-indices
-.
-Raw CSV URL: (Insert your GitHub Raw URL here, e.g., https://raw.githubusercontent.com/user/repo/main/data/dataset_real_4x4.csv)
-.
-License/Terms of use: Publicly available for research and educational purposes
-.
+Dataset Name: Provincial Competitiveness Index (PCI) Vietnam 2024-2025. Official Source: PCI Vietnam. Responsible Institution: Vietnam Chamber of Commerce and Industry (VCCI) and USAID. Source URL: https://pcivietnam.vn/report-2025#sub-indices. Raw CSV URL: https://raw.githubusercontent.com/VuPhungThe1983/Mexico-summer-school-2026/refs/heads/main/data/dataset_real_4x4.csv
+
+License/Terms of use: Publicly available for research and educational purposes.
 Consultation Date: June 30, 2026.
 Problem Domain: Economics and Public Policy.
-Modeling
-Set A (Provinces): 4 selected Vietnamese provinces: An Giang, Đà Nẵng, Hưng Yên, and Tuyên Quang
-.
-Criteria for A: Selected to represent different economic regions and varying competitiveness levels.
-Set B (Sub-indices): 4 key competitiveness indicators: CSTP01 (Entry Costs), CSTP04 (Time Costs), CSTP05 (Informal Charges), and CSTP08 (Legal Institutions)
-.
-Criteria for B: Selected based on their high impact on the local business environment.
-Definition of x 
-ij
-​
- =1: Province i is specifically matched to excel or receive focused support for indicator j
-.
-Interpretation of x 
-ij
-​
- =0: Province i is not matched with indicator j
-.
+Modeling:
+- **Set A (Provinces):** $A = \{a_1, a_2, a_3, a_4\}$ (An Giang, Đà Nẵng, Hưng Yên, Tuyên Quang).
+- **Set B (Indicators):** $B = \{b_1, b_2, b_3, b_4\}$ (Entry Costs, Time Costs, Informal Charges, Legal Institutions).
+- **Binary Variable $x_{ij}$:**
+$$
+x_{ij}=\begin{cases}
+1, & \text{if province } a_i \text{ is matched to indicator } b_j \\
+0, & \text{otherwise}
+\end{cases}
+$$
+
 Score Matrix
 Columns used: Entry Costs, Time Costs, Informal Charges, and Legal Institutions
 .
