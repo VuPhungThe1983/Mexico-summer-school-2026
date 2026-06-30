@@ -41,6 +41,7 @@ $S_{ij} = \text{Score of province } a_i \text{ in indicator } b_j$.
 
 ## 4. Objective and Constraints
 The objective is to find a one-to-one matching that maximizes the total score:
+
 $$ \max_x \sum_{i=1}^{4}\sum_{j=1}^{4} S_{ij}x_{ij} $$
 
 **Constraints:**
