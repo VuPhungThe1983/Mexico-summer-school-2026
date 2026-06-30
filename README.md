@@ -8,7 +8,7 @@ Quantum computing course
 - **Official Source:** PCI Vietnam.
 - **Responsible Institution:** Vietnam Chamber of Commerce and Industry (VCCI) and USAID.
 - **Source URL:** [https://pcivietnam.vn/report-2025#sub-indices](https://pcivietnam.vn/report-2025#sub-indices)
-- **Consultation Date:** June 30, 2026.
+- **Submitted Date:** June 30, 2026.
 - **Problem Domain:** Economics and Public Policy.
 
 ## 2. Modeling
@@ -17,7 +17,9 @@ We define two sets of size 4:
 - **Set B (Indicators):** $B = \{b_1, b_2, b_3, b_4\}$ representing Entry Costs, Time Costs, Informal Charges, and Legal Institutions.
 
 **Binary Variable $x_{ij}$:**
+
 Each binary variable indicates whether a match is chosen between province $a_i$ and indicator $b_j$:
+
 $$
 x_{ij}=\begin{cases}
 1, & \text{if province } a_i \text{ is matched to indicator } b_j \\
