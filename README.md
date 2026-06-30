@@ -50,9 +50,11 @@ $$ \max_x \sum_{i=1}^{4}\sum_{j=1}^{4} S_{ij}x_{ij} $$
 
 ## 5. QUBO Formulation
 To solve this on a quantum computer, we transform the problem into a Quadratic Unconstrained Binary Optimization (QUBO) model by minimizing the energy function $E(x)$:
+
 $$
 E(x) = -\sum_{i=1}^{4}\sum_{j=1}^{4} S_{ij}x_{ij} + \lambda_A\sum_{i=1}^{4}\left(\sum_{j=1}^{4} x_{ij}-1\right)^2 + \lambda_B\sum_{j=1}^{4}\left(\sum_{i=1}^{4} x_{ij}-1\right)^2
 $$
+
 - The first term rewards high PCI scores.
 - The terms with $\lambda_A$ and $\lambda_B$ penalize violations of the matching constraints.
 
