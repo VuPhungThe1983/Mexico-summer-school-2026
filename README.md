@@ -4,7 +4,7 @@ Quantum computing course
 # Project QUBO-QAOA: Bipartite Matching 4x4 (PCI Vietnam Dataset)
 
 ## 1. Dataset
-- **Dataset Name:** Provincial Competitiveness Index (PCI) Vietnam 2024-2025.
+- **Dataset Name:** Provincial Competitiveness Index (PCI) Vietnam 2025.
 - **Official Source:** PCI Vietnam.
 - **Responsible Institution:** Vietnam Chamber of Commerce and Industry (VCCI) and USAID.
 - **Source URL:** [https://pcivietnam.vn/report-2025#sub-indices](https://pcivietnam.vn/report-2025#sub-indices)
@@ -65,12 +65,12 @@ $$
 ## 7. Results and Comparison
 - **Exact Classical Solution:** Obtained via brute-force search of all $4! = 24$ feasible permutations.
 - **Local QAOA Result:** Executed using a local simulator with $p=1$.
-- **Comparison:** QAOA demonstrates the ability to amplify the probability of the optimal state. Any non-feasible bitstrings observed are handled via hybrid post-processing (classical repair).
+- **Comparison:** QAOA demonstrates the ability to amplify the probability of the optimal state. Any non-feasible bitstrings observed are handled via hybrid post-processing.
 
 ## 8. Ethics and Limitations
 - **Ethical Warning:** This project is for educational purposes only.
-- **Mitigation:** We use aggregated, publicly available macro-economic data (PCI) which does not contain sensitive personal information.
-- **Limitations:** The $4 \times 4$ scale is a simplification. Real economic problem will involve more complex, non-linear inter-dependencies that are not presented in this basic matching model.
+- **Mitigation:** We use publicly available economic data (PCI) which does not contain sensitive personal information.
+- **Limitations:** The $4 \times 4$ scale is a simple showcase. Real economic problem will involve more complex, non-linear inter-dependencies that are not presented in this basic matching model.
 
 ## 9. Execution
 1. Open `mx_final_project_ss26.ipynb` in Google Colab.
