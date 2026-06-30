@@ -59,7 +59,7 @@ $$
 - The terms with $\lambda_A$ and $\lambda_B$ penalize violations of the matching constraints.
 
 ## 6. Justification
-- **Why Bipartite Matching?** This model represents a strategic allocation where each province is paired with a specific economic area for focused improvement. A 1-to-1 matching ensures resources are distributed efficiently without overlap.
+- **Why Bipartite Matching?** This model represents a strategic allocation where each province is paired with a specific economic area for dire improvement. A 1-to-1 matching ensures resources are distributed efficiently without overlap.
 - **Why QUBO?** QUBO allows us to map the discrete decision variables directly to qubits. By setting penalty weights $(\lambda)$ higher than the maximum possible score, the ground state of the Hamiltonian corresponds to a feasible and optimal economic assignment.
 
 ## 7. Results and Comparison
@@ -68,11 +68,11 @@ $$
 - **Comparison:** QAOA demonstrates the ability to amplify the probability of the optimal state. Any non-feasible bitstrings observed are handled via hybrid post-processing (classical repair).
 
 ## 8. Ethics and Limitations
-- **Ethical Warning:** This project is for educational purposes only. The results should not be used for real-world public policy or resource allocation.
+- **Ethical Warning:** This project is for educational purposes only.
 - **Mitigation:** We use aggregated, publicly available macro-economic data (PCI) which does not contain sensitive personal information.
-- **Limitations:** The $4 \times 4$ scale is a simplification. Real economic development involves more complex, non-linear inter-dependencies that are not captured in this basic matching model.
+- **Limitations:** The $4 \times 4$ scale is a simplification. Real economic problem will involve more complex, non-linear inter-dependencies that are not presented in this basic matching model.
 
 ## 9. Execution
-1. Open `proyecto_qubo_qaoa.ipynb` in Google Colab.
+1. Open `mx_final_project_ss26.ipynb` in Google Colab.
 2. Ensure the file `data/dataset_real_4x4.csv` is uploaded to the environment.
 3. Run all cells in order (`Runtime -> Run all`).
